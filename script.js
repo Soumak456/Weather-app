@@ -22,22 +22,28 @@ document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
 document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
 if(data.weather[0].main == "Clouds"){
-    weatherIcon.src = "images/clouds.png"
+    weatherIcon.src = "animated/cloudy.svg"
 }
 else if(data.weather[0].main == "Haze"){
-    weatherIcon.src = "images/clouds.png"
+    weatherIcon.src = "animated/cloudy-day-2.svg"
 }
 else if(data.weather[0].main == "Clear"){
-    weatherIcon.src = "images/clear.png"
+    weatherIcon.src = "animated/day.svg"
 }
 else if(data.weather[0].main == "Rain"){
-    weatherIcon.src = "images/rain.png"
+    weatherIcon.src = "animated/rainy-1.svg"
 }
 else if(data.weather[0].main == "Drizzle"){
-    weatherIcon.src = "images/drizzle.png"
+    weatherIcon.src = "animated/drizzle.svg"
+}
+else if(data.weather[0].main == "Thunder"){
+    weatherIcon.src = "animated/thunder.svg"
 }
 else if(data.weather[0].main == "Mist"){
-    weatherIcon.src = "images/mist.png"
+    weatherIcon.src = "animated/thunder.svg"
+}
+else if(data.weather[0].main == "Snow"){
+    weatherIcon.src = "animated/snowy_1.svg"
 }
 
 document.querySelector(".weather").style.display = "block";
